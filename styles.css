@@ -5,9 +5,9 @@ body {
 }
 
 #container {
-  height: 700px;
-  width: 700px;
-  background-color: aqua;
+  height: 1000px;
+  width: 1000px;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -16,11 +16,19 @@ body {
 }
 
 .container-items {
-  background-color: aqua;
+  background-color: lightgray;
   flex-grow: 1;
   flex-shrink: 1;
 }
 
 .container-items:hover {
   background-color: gray;
+}
+
+.colored {
+  background-color: black;
+}
+
+.up {
+  background-color: orange;
 }
