@@ -2,33 +2,69 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 
 #container {
-  height: 1000px;
-  width: 1000px;
+  height: 650px;
+  width: 650px;
   background-color: white;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   align-items: center;
+  align-self: flex-end;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+
+#left-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#right-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#heading {
+  text-align: center;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+#controls > p {
+  font-size: 25px;
+}
+
+.control-button,
+input {
+  font-size: 20px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .container-items {
-  background-color: lightgray;
   flex-grow: 1;
   flex-shrink: 1;
 }
 
-.container-items:hover {
-  background-color: gray;
+.button-pressed {
+  background-color: grey;
+  color: whitesmoke;
 }
 
-.colored {
-  background-color: black;
-}
-
-.up {
-  background-color: orange;
+.control-button:hover {
+  background-color: lightgray;
 }

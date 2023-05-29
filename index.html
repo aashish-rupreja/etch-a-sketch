@@ -9,6 +9,20 @@
     <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <div id="container"></div>
+    <div id="left-flex">
+      <div id="heading"><h1>Etch-a-Sketch</h1></div>
+      <div id="controls">
+        <p>Please enter Board size between 3 - 50</p>
+        <input id="size-input" type="text" placeholder="Board size" />
+        <button id="input-eval" class="control-button">Create Grid</button>
+        <button id="erase" class="control-button">Erase</button>
+        <button id="rainbow" class="control-button">Rainbow</button>
+        <button id="classic" class="control-button">Classic</button>
+        <button id="shade" class="control-button">Shade</button>
+        <button id="clear" class="control-button">Clear</button>
+      </div>
+    </div>
+
+    <div id="right-flex"><div id="container"></div></div>
   </body>
 </html>
